@@ -69,7 +69,10 @@ details li:hover{
     margin-top: 7%;
     padding: 0 5%;
     font-family: sans-serif;
-    font-size: 31px;
+    font-size: 40px;
+    margin: 7%;
+    width: 100%;
+    margin-left: 0%;
 }
 
 .ola #ola{
@@ -121,8 +124,8 @@ span{
 
 section.sobre{
     padding: 80px 4%;
-    
 }
+
 section.sobre img{
     width: 100%;
     border-radius: .5cm;
@@ -146,6 +149,10 @@ section.sobre img{
     text-align: justify;
 }
 
+.sobre .btn{
+    text-align: center;
+}
+
 .sobre .txt-sobre .btn button{
     width: 60px;
     height: 60px;
@@ -154,8 +161,8 @@ section.sobre img{
     background-color: #00FF08;
     font-size: 22px;
     cursor: pointer;
-    margin: 0 10px;
-    margin-left: 6.5%;
+    margin: 0 auto;
+    margin-left: 3%;
 }
 
 .sobre .txt-sobre .btn button:hover{
@@ -291,6 +298,7 @@ form .btn-enviar input:hover{
     
     header{
         display: flex;
+        align-items: center;
     }
     
     header img{
@@ -315,10 +323,11 @@ form .btn-enviar input:hover{
     }
 
     .ola{
-        font-size: 69px;
+        font-size:  53px;
         padding: 0 5%;
         font-family: sans-serif;
         padding-top: 3%;
+        margin-left: 0;
     }
     
     .ola #ola{
@@ -359,6 +368,10 @@ form .btn-enviar input:hover{
     .flex{
         display: flex;
         gap: 60px;
+    }
+
+    .interface{
+        align-items: center;
     }
     
     .sobre .txt-sobre .btn button{
