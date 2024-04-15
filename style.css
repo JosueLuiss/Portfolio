@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+    background-color: #020202;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+header img{
+    width: 80%;
+    border-radius: 100%;
+    border: 10px solid blue;
+    padding: 5%;
+    margin-left: 10%;
+}
+
+header img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px
+    }
+} 
+
+summary{
+    font-size: 52px;
+    text-align: right;
+    margin-top: 10%;
+    width: 15%;
+    margin-left: 80%;
+}
+
+summary:hover{
+    color: blue;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+details li{
+    text-align: right;
+    margin-left: 65%;
+    font-size: 18px;
+    margin-top: 2%;
+    width: 30%;
+    color: white;
+}
+
+details li:hover{
+    color: blue;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.ola{
+    margin-top: 7%;
+    padding: 0 5%;
+    font-family: sans-serif;
+    font-size: 31px;
+}
+
+.ola #ola{
+    color: blue;
+    font-size: px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
+
+.ola #uni{
+    color: #800000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.especialidades{
+    padding: 40px 4%;
+    margin-top: 5%;
+}
+
+h2.titulo{
+    font-size: 32px;
+    text-align: center;
+}
+
+span{
+    color: blue;
+}
+
+.especialidades .especialidades-box{
+    padding: 40px;
+    margin-top: 10%;
+    border-radius: 0.3cm;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.568);
+    transition: 0.2s;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 48px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+section.sobre{
+    padding: 80px 4%;
+    
+}
+section.sobre img{
+    width: 100%;
+    border-radius: .5cm;
+}
+
+.sobre img:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0 0 15px rgb(11, 0, 172);
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35px;
+    margin: 30px 0;
+    line-height: 35px;
+    margin-left: 5%;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-left: 6.5%;
+}
+
+.sobre .txt-sobre .btn button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px blue;
+    transition: .2s;
+}
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.267);
+}
+
+section.portfolio .flex{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 15%;
+}
+
+.img-port{
+    width: 280px;
+    height: 280px;
+    background-color: #00FF08;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0ad3;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+a{color: white;}
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+section.formulario h2{
+    font-size: 32px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font: 36px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #00FF08;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0 0 0 8px #00FF08;
+    transform: scale(1.01);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px){
+    
+    header{
+        display: flex;
+    }
+    
+    header img{
+        width: 50%;
+       text-align: center;
+
+    }
+
+    header h1{
+        font-size: 72px;
+    }
+
+    summary{
+        font-size: 72px;
+        margin-left: 80%;
+        margin-top: 5%;
+    }
+
+    details li{
+        font-size: 32px;
+        margin-left: 65%;
+    }
+
+    .ola{
+        font-size: 69px;
+        padding: 0 5%;
+        font-family: sans-serif;
+        padding-top: 3%;
+    }
+    
+    .ola #ola{
+        color: blue;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .ola #uni{
+        text-align: center;
+        color: #800000;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    h2.titulo{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .especialidades .flex{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+    }
+
+    .especialidades .especialidades-box i{
+        font-size: 70px;
+    }
+
+    .especialidades .especialidades-box h3{
+        font-size: 40px;
+    }
+
+    .especialidades .especialidades-box p{
+        font-size: 28px;
+    }
+
+    .flex{
+        display: flex;
+        gap: 60px;
+    }
+    
+    .sobre .txt-sobre .btn button{
+        margin: 0 5px;
+    }
+
+    .sobre .txt-sobre h2, .sobre .txt-sobre p{
+        margin-left: 0;
+    }
+
+    section.portfolio .flex{
+        flex-direction: row;
+        margin-top: 5%;
+    }
+
+    section.portfolio{
+        padding: 80px 4%;
+        box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.267);
+    }
+
+    form{
+        width: 50%;
+    }
+
+
+
+
+
+}
